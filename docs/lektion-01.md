@@ -7,14 +7,21 @@
 
 ## Upplägg
 
--   Lära sig grundläggande verktyg (Git, Node, NPM)
--   Sätta upp en basic utvecklingsmiljö som passar modern JS-utveckling
+### Torsdag förmiddag
+-   Intro (9:00 - 9:15)
+-   Lära sig grundläggande verktyg (Git, Node, NPM) (9:15 - 10:00)
+-   Sätta upp en basic utvecklingsmiljö som passar modern JS-utveckling (10:00 - 12:00)
+
+## Tors eftermiddag
 -   Gå genom nyare tillägg till JavaScript (ES6, ES2015+ osv)
 -   Asynkron vs synkron kod. Callback, Promises eller async/await? - Race conditions
 
+## Fredag förmiddag
 -   Vad är en CRUD-applikation?
 -   Vad är REST? GET, POST, PUT, DELETE, OPTIONS
 -   Kommunicera med ett REST-API via fetch
+
+## Fredag eftermiddag
 -   CORS
 -   API-säkerhet - Never trust the client - oAuth, JSON Web Token
 -   Ramverk? Vad löser React?
@@ -43,4 +50,4 @@
 -   Commit Hooks - Husky etc
 
 
-Gör uppgift 1. Om du blir klar innan lunch, läs mer på __Läs mer om__ och __Om du vill gräva djupare__ 
+Gör [uppgift 1](../README.md). Om du blir klar innan lunch, läs mer på __Läs mer om__ och __Om du vill gräva djupare__ 

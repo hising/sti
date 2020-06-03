@@ -24,4 +24,3 @@ numbers.forEach((number) => {
 });
 
 const multiplierTable = numbers.map((number) => numbers.map((x) => multiply(x, number)));
-
