@@ -1,5 +1,7 @@
 ## Torsdag - förmiddag
 
+https://github.com/hising/sti
+
 -   Mattias - Utvecklare (DICE, King, Embark, bwin, Ongame mfl) i 20+ år
 -   Upplägg - Verktyg, Modern JavaScript - ES6/ES2015+, REST/CRUD/API:er, Ramverk överblick
 -   JavaScript - Förväntningar från gruppen
@@ -50,7 +52,7 @@
 -   Linters - ESLint, TSLint - följ guidelines, hittar småfel
 -   Formatters - Prettier - "Så här ska koden se ut"
 -   .dotenv - Hantera konfiguration baserat på miljö (utvecklingsmiljö eller live)
--   Continous Integration - Github Actions, CircleCI etc
+-   Continuous Integration - Github Actions, CircleCI etc
 -   Commit Hooks - Husky etc
 
 
