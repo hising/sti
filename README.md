@@ -1,6 +1,6 @@
 # STI - JavaScript
 
-Mission 1 - Få upp en bra och stabil grund för JavaScript-utveckling i webbläsaren som är best practice 2020.
+Lektion 1 - Få upp en bra och stabil grund för JavaScript-utveckling i webbläsaren som är best practice 2020. Den här basen ska vi sedan använda för att gå genom ES2015-specifik och annan kod senare.
 
 ## Verktyg
 
@@ -14,6 +14,9 @@ $ cd sti
 $ npm install
 $ npm run start
 ```
+
+Surfa till http://localhost:8080/ (borde öppnas automagiskt)
+Prova att ändra texten i `src/index.js` och kolla in på sidan igen utan att ladda om.
 
 ## Vad har vi löst?
 
@@ -30,6 +33,15 @@ $ npm run start
 - NPM - Pakethanterare - https://docs.npmjs.com/about-npm/
 - Webpack - Modulhanterare/bundler - https://webpack.js.org/concepts
 - BabelJS - Bakåtkompatibel ES2015+ - https://babeljs.io/
+- Webpack Dev Server - https://webpack.js.org/configuration/dev-server/
+- HTML Webpack Plugin - https://www.npmjs.com/package/html-webpack-plugin
 
-Surfa till http://localhost:8080/ (borde öppnas automagiskt)
 
+## Om du vill gräva djupare
+
+- Yarn - Alternativ till NPM - https://yarnpkg.com/
+- ParcelJS - Alternativ till Webpack/Babel - https://parceljs.org/
+- Webpack Plugin - https://webpack.js.org/plugins/
+- Awesome Webpack - https://github.com/webpack-contrib/awesome-webpack
+- Awesome Babel - https://github.com/babel/awesome-babel
+- Webpack Optimization - https://webpack.js.org/configuration/optimization/
