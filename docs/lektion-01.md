@@ -13,18 +13,22 @@
 -   Sätta upp en basic utvecklingsmiljö som passar modern JS-utveckling (10:00 - 12:00)
 
 ## Tors eftermiddag
--   Gå genom nyare tillägg till JavaScript (ES6, ES2015+ osv)
--   Asynkron vs synkron kod. Callback, Promises eller async/await? - Race conditions
+-   Gå genom nyare tillägg till JavaScript (ES6, ES2015+ osv) (13:00 - 13:15)
+-   Asynkron vs synkron kod. Callback, Promises eller async/await? - Race conditions (13:15 - 13:30)
+-   Göra uppgift (13:30 - 15:30)
+-   Synk 15:30
 
 ## Fredag förmiddag
 -   Vad är en CRUD-applikation?
 -   Vad är REST? GET, POST, PUT, DELETE, OPTIONS
--   Kommunicera med ett REST-API via fetch
+-   CORS
+-   Kommunicera med REST-API via fetch
 
 ## Fredag eftermiddag
--   CORS
 -   API-säkerhet - Never trust the client - oAuth, JSON Web Token
+-   Vart hittar man öppen data?
 -   Ramverk? Vad löser React?
+-   Synk 15:30
 
 ### Grundläggande verktyg
 
@@ -50,4 +54,4 @@
 -   Commit Hooks - Husky etc
 
 
-Gör [uppgift 1](../README.md). Om du blir klar innan lunch, läs mer på __Läs mer om__ och __Om du vill gräva djupare__ 
+Gör [uppgift 1](uppgift-01.md). Om du blir klar innan lunch, läs mer på __Läs mer om__ och __Om du vill gräva djupare__ 
