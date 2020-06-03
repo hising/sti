@@ -1,5 +1,7 @@
 # STI - JavaScript
 
+Mission 1 - Få upp en bra och stabil grund för JavaScript-utveckling i webbläsaren som är best practice 2020.
+
 ## Verktyg
 
 - Installera Git - https://git-scm.com/downloads
