@@ -1,6 +1,6 @@
 # STI - JavaScript
 
-Lektion 1 - Få upp en bra och stabil grund för JavaScript-utveckling i webbläsaren som är best practice 2020. Den här basen ska vi sedan använda för att gå genom ES2015-specifik och annan kod senare.
+Uppgift 1 - Få upp en bra och stabil grund för JavaScript-utveckling i webbläsaren som är best practice 2020. Den här basen ska vi sedan använda för att gå genom ES2015-specifik och annan kod senare.
 
 ## Verktyg
 
