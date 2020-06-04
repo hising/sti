@@ -9,7 +9,7 @@ export const withCallback = (callback) => {
     req.send();
 };
 
-export const callbackPromise = () =>
+export const getWithPromise = () =>
     new Promise((resolve, reject) => {
         fetch(GIST_URI)
             .then((response) => response.json())
@@ -19,7 +19,7 @@ export const callbackPromise = () =>
             });
     });
 
-export const callbackAsync = async () => {
+export const getWithAsync = async () => {
     try {
         let response = await fetch(GIST_URI);
         return await response.json();
@@ -30,5 +30,5 @@ export const callbackAsync = async () => {
 };
 
 export const usePromiseAsAsync = async () => {
-    return await callbackPromise();
+    return await getWithPromise();
 };
