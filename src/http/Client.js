@@ -1,3 +1,5 @@
+import { getClientId } from "../helpers";
+
 export class HttpClient {
 
   static GET = "GET";
@@ -10,9 +12,13 @@ export class HttpClient {
   }
 
   async fetch(path, method, params = {}, headers = {}) {
+    let defaultHeaders = {
+      'Content-Type': "application/json",
+      'X-Client-Id': getClientId()
+    };
     let fetchOptions = {
       method,
-      headers,
+      headers: {...defaultHeaders, ...headers},
       mode: 'cors'
     };
     let extra = {};
