@@ -1,12 +1,13 @@
 import "./style.css";
 import html from "./test.html";
-import { getWithAsync, getWithPromise, withCallback } from "./async";
-import { onJson } from "./helpers";
+import { itemStore } from "./stores/ItemStore";
 
 const initApp = async () => {
-    withCallback(onJson);
-    getWithPromise().then(onJson);
-    onJson(await getWithAsync());
+    // withCallback(onJson);
+    // getWithPromise().then(onJson);
+    // onJson(await getWithAsync());
+    const all = await itemStore.read();
+    console.log(all);
 };
 
 (async () => {
