@@ -9,7 +9,7 @@ Uppgift 1 - Få upp en bra och stabil grund för JavaScript-utveckling i webblä
 - Starta en terminal, gå till en folder där du brukar ha projekt
  
 ```
-$ git clone git@github.com:hising/sti.git
+$ git clone https://github.com/hising/sti.git
 $ cd sti
 $ npm install
 $ npm run start
