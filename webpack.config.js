@@ -1,6 +1,15 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+    entry: {
+        "app": "./src/index.js",
+        "app2": "./src/nisse.js",
+    },
+
+    output: {
+        filename: "[name].js"
+    },
+
     module: {
         rules: [
             {
@@ -17,6 +26,10 @@ module.exports = {
                         loader: "html-loader"
                     }
                 ]
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     },
