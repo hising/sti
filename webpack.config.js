@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
     entry: {
         "app": "./src/index.js",
-        "app2": "./src/nisse.js",
+        "app2": "./src/another.js",
     },
 
     output: {
