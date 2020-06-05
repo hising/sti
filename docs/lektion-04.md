@@ -31,7 +31,7 @@
 
 ## Förbereda kodbasen för React
 
-- Se till att vi har ett React-preset för BabelJS - https://babeljs.io/docs/en/babel-preset-react
+- Se till att vi har ett React-preset för BabelJS (annars förstår inte Babel JSX) - https://babeljs.io/docs/en/babel-preset-react
 - Se till att vi anpassar vår webpack-config så vi också kan hantera .jsx-filer
 - Installera React `npm install react --save`
 - Installera React-DOM (what is this sorcery?) `npm install react-dom --save`
