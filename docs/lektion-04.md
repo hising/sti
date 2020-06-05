@@ -14,6 +14,7 @@
 - Funktionsbaserade med hooks
 - Props - tas emot externt
 - State - hanteras internt
+- När state eller props förändras anropas alltid render
 
 ## Livscykelmetoder
 - constructor
