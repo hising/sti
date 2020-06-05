@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./styles/Item.css";
 export const Item = ({ name, id, onClick, onUpdate }) => {
     const [isUpdate, setIsUpdate] = useState(false);
     const [val, setVal] = useState(name);
@@ -14,8 +14,9 @@ export const Item = ({ name, id, onClick, onUpdate }) => {
         />
     ); // TODO: Change Input.jsx to be able to handle both Add and Update
     return (
-        <li key={`list-item-${id}`}>
+        <li className={"sti-list-item"} key={`list-item-${id}`}>
             {isUpdate ? updateForm : name}{" "}
+            <div className="sti-actions">
             <a
                 onClick={(event) => {
                     event.preventDefault();
@@ -35,6 +36,7 @@ export const Item = ({ name, id, onClick, onUpdate }) => {
                 href={"#"}>
                 {isUpdate ? "Save" : "Update"}
             </a>
+            </div>
         </li>
     );
 };

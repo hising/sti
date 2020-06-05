@@ -7,14 +7,17 @@ export class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: []
+            items: [],
+            loading: false
         };
         this.loadItemsFromServer().catch((e) => console.error(e));
     }
 
     async onRemove(id) {
-        await itemStore.delete(id);
-        await this.loadItemsFromServer();
+        if (confirm("Are you sure you want to delete this item?")) {
+            await itemStore.delete(id);
+            await this.loadItemsFromServer();
+        }
     }
 
     async onUpdate(id, txt) {
@@ -34,6 +37,7 @@ export class App extends React.Component {
                     onAdd={(txt) => {
                         this.addItem(txt);
                     }}
+                    placeholder={"Add an item"}
                 />
                 <List
                     onRemove={this.onRemove.bind(this)}
@@ -48,7 +52,7 @@ export class App extends React.Component {
     async loadItemsFromServer() {
         let items = await itemStore.read();
         this.setState({
-            items
+            items,
         });
     }
 }

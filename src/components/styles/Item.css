@@ -1,0 +1,18 @@
+.sti-list-item {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+}
+.sti-list-item:last-child {
+    border-bottom: none;
+}
+
+.sti-actions {
+    float: right;
+}
+.sti-actions a {
+    text-decoration: none;
+    color: #65a0db;
+    display: inline-block;
+    padding: 0 3px;
+}

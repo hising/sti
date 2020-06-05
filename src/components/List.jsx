@@ -1,14 +1,16 @@
 import React from "react";
 import { Item } from "./Item";
+import "./styles/List.css";
 export const List = ({ items, onRemove, onUpdate, loading = false }) => {
+    if (loading) {
+        return <div>Loading ...</div>;
+    }
     return items.length > 0 ? (
-        <ul>
+        <ul className={"sti-list"}>
             {items.map((item) => (
                 <Item key={item.id} onUpdate={onUpdate} onClick={onRemove} {...item} />
             ))}
         </ul>
-    ) : loading ? (
-        <div>Loading ...</div>
     ) : (
         <div>Wow, so empty!</div>
     );
