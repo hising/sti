@@ -2,7 +2,7 @@
 
 ## Vad är React
 
-- Ett bibliotek för att hantera UI:n
+- Ett bibliotek för att hantera UI:n - https://reactjs.org/
 - State-baserat
 - JSX
   `const element = <div>Hello, {name}</div>;`
