@@ -2,8 +2,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
-        "app": "./src/index.js",
-        "app2": "./src/another.js",
+        "app": "./src/index.js"
     },
 
     output: {
@@ -13,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader"
@@ -32,6 +31,9 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             }
         ]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     },
     plugins: [
         new HtmlWebPackPlugin({
