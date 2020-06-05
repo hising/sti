@@ -7,7 +7,7 @@ Uppgifter:
 
 - Byt ut fetch mot ett bibliotek för http-requests (axios, superagent el liknande)
 - Installera biblioteket som ett dependency med NPM
-- Se till att listan med alla items är aktuell när vi lägger till, ändrar eller tar bort en item
+- Se till att listan med alla items är aktuell, utan att behöva ladda om sidan, när vi lägger till, ändrar eller tar bort en item
 
 Libbar
 
