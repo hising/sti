@@ -12,8 +12,8 @@
 
 - Klassbaserade med livscykelmetoder
 - Funktionsbaserade med hooks
-- Props
-- State
+- Props - tas emot externt
+- State - hanteras internt
 
 ## Livscykelmetoder
 - constructor
