@@ -24,9 +24,9 @@ export const getWithAsync = async () => {
         let response = await fetch(GIST_URI);
         return await response.json();
     } catch (e) {
-        console.error(e);
+        return {};
     }
-    return {};
+
 };
 
 export const usePromiseAsAsync = async () => {
