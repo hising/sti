@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 export const Input = (props) => {
-
     const [txt, setTxt] = useState("");
 
     return (
         <div>
-            <input type={"text"} value={txt} onChange={(event) => {
-                setTxt(event.target.value);
-            }}  />
+            <input
+                type={"text"}
+                value={txt}
+                onChange={(event) => {
+                    setTxt(event.target.value);
+                }}
+            />
             <button
                 onClick={(event) => {
                     event.preventDefault();
@@ -15,8 +18,7 @@ export const Input = (props) => {
                         props.onAdd(txt);
                         setTxt("");
                     }
-                }}
-            >
+                }}>
                 Add
             </button>
         </div>

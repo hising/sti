@@ -21,8 +21,7 @@ export const Item = ({ name, id, onClick, onUpdate }) => {
                     event.preventDefault();
                     onClick(id);
                 }}
-                href={"#"}
-            >
+                href={"#"}>
                 Delete
             </a>{" "}
             <a
@@ -33,8 +32,7 @@ export const Item = ({ name, id, onClick, onUpdate }) => {
                     }
                     setIsUpdate(!isUpdate);
                 }}
-                href={"#"}
-            >
+                href={"#"}>
                 {isUpdate ? "Save" : "Update"}
             </a>
         </li>
