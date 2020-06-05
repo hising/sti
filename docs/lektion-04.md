@@ -18,6 +18,7 @@
 ## Livscykelmetoder
 - constructor
 - render
+- setState
 - componentDidMount
 - componentDidUpdate
 - componentWillUnmount
