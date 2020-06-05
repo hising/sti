@@ -12,7 +12,7 @@ export const Item = ({ name, id, onClick, onUpdate }) => {
                 setVal(event.target.value);
             }}
         />
-    );
+    ); // TODO: Change Input.jsx to be able to handle both Add and Update
     return (
         <li key={`list-item-${id}`}>
             {isUpdate ? updateForm : name}{" "}
@@ -28,10 +28,15 @@ export const Item = ({ name, id, onClick, onUpdate }) => {
             <a
                 onClick={(event) => {
                     event.preventDefault();
+                    if (isUpdate && val !== name) {
+                        onUpdate(id, val);
+                    }
                     setIsUpdate(!isUpdate);
                 }}
                 href={"#"}
-            >{isUpdate ? "Save" : "Update"}</a>
+            >
+                {isUpdate ? "Save" : "Update"}
+            </a>
         </li>
     );
 };

@@ -1,3 +1,1 @@
-export class AxiosClient {
-
-}
+export class AxiosClient {}
