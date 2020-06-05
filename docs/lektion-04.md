@@ -31,8 +31,10 @@
 
 ## Förbereda kodbasen för React
 
-- Se till att vi har ett preset för BabelJS
+- Se till att vi har ett React-preset för BabelJS
 - Se till att vi anpassar vår webpack-config så vi också kan hantera .jsx-filer
+- Installera React
+- Installera React-DOM (what is this sorcery?)
 
 ## Stretch Goal - Uppgift
 
