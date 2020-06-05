@@ -47,3 +47,4 @@
 ## Läs mer
 - Hooks - https://reactjs.org/docs/hooks-reference.html
 - Lifecycle Methods - https://reactjs.org/docs/react-component.html
+- Awesome React - https://github.com/enaqx/awesome-react
