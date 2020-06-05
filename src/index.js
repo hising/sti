@@ -7,12 +7,16 @@ const initApp = async () => {
     // getWithPromise().then(onJson);
     // onJson(await getWithAsync());
     const all = await itemStore.read();
+
+    //drawItemList(all);
     // const first = await itemStore.read(1);
     // await itemStore.create({ name: "Ich bin einem neue issem"});
-    //await itemStore.delete(2);
-    /* await itemStore.update(5, {
+    // await itemStore.delete(8);
+    /*await itemStore.update(14, {
         name: "Holy Smokessss"
-    }) */
+    });*/
+    //const item = await itemStore.read(14);
+    //const all = await itemStore.read();
     console.log(all);
 };
 
@@ -23,5 +27,3 @@ const initApp = async () => {
         await initApp();
     }
 })();
-
-
