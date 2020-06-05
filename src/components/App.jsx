@@ -12,11 +12,18 @@ export class App extends React.Component {
         this.loadItemsFromServer().catch((e) => console.error(e));
     }
 
-    // TODO: Handle remove item
-    // TODO: Handle update item
+    async onRemove(id) {
+        await itemStore.delete(id);
+        await this.loadItemsFromServer();
+    }
+
+    async onUpdate(id, txt) {
+        await itemStore.update(id, { name: txt });
+        await this.loadItemsFromServer();
+    }
 
     async addItem(txt) {
-        await itemStore.create({name: txt});
+        await itemStore.create({ name: txt });
         await this.loadItemsFromServer();
     }
 
@@ -28,7 +35,12 @@ export class App extends React.Component {
                         this.addItem(txt);
                     }}
                 />
-                <List items={this.state.items} loading={this.state.loading} />
+                <List
+                    onRemove={this.onRemove.bind(this)}
+                    onUpdate={this.onUpdate.bind(this)}
+                    items={this.state.items}
+                    loading={this.state.loading}
+                />
             </>
         );
     }

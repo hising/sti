@@ -1,11 +1,15 @@
 import React from "react";
-export const List = ({ items, loading = false }) => {
-    // TODO: Break out li elements as new Item-component
+import { Item } from "./Item";
+export const List = ({ items, onRemove, onUpdate, loading = false }) => {
     return items.length > 0 ? (
         <ul>
-            {items.map((item, index) => (
-                <li key={`list-item-${item.id}`}>{item.name}</li>
+            {items.map((item) => (
+                <Item key={item.id} onUpdate={onUpdate} onClick={onRemove} {...item} />
             ))}
         </ul>
-    ) : loading ? <div>Loading ...</div> : <div>Wow, so empty!</div>;
+    ) : loading ? (
+        <div>Loading ...</div>
+    ) : (
+        <div>Wow, so empty!</div>
+    );
 };
