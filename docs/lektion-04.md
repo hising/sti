@@ -31,10 +31,11 @@
 
 ## Förbereda kodbasen för React
 
-- Se till att vi har ett React-preset för BabelJS
+- Se till att vi har ett React-preset för BabelJS - https://babeljs.io/docs/en/babel-preset-react
 - Se till att vi anpassar vår webpack-config så vi också kan hantera .jsx-filer
-- Installera React
-- Installera React-DOM (what is this sorcery?)
+- Installera React `npm install react --save`
+- Installera React-DOM (what is this sorcery?) `npm install react-dom --save`
+- Rendera en enkel React-komponent till vårt appElement
 
 ## Stretch Goal - Uppgift
 
