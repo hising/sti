@@ -5,6 +5,7 @@
 - Ett bibliotek för att hantera UI:n
 - State-baserat
 - JSX
+  `const element = <div>Hello, {name}</div>;`
 - Komponent-baserat
 
 ## React-komponenter
