@@ -12,6 +12,6 @@ export const List = ({ items, onRemove, onUpdate, loading = false }) => {
             ))}
         </ul>
     ) : (
-        <div>Wow, so empty!</div>
+        <div className={"sti-empty-state"}>Wow, so empty!</div>
     );
 };
